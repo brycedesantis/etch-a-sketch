@@ -11,6 +11,7 @@ body{
     height: 545px;
     width: 545px;
     margin-top: 60px;
+    border: 1px solid black;
 }
 
 .grid{
