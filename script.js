@@ -36,3 +36,12 @@ resizeBtn.addEventListener('click', () => {
         container.appendChild(square)
     }
 })
+
+const clear = document.querySelector("#clear")
+
+clear.addEventListener('click', () => {
+    let squares = document.querySelectorAll('.grid')
+    squares.forEach(square => {
+        square.style.backgroundColor = 'white'
+    })
+})
