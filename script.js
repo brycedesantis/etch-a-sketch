@@ -45,3 +45,29 @@ clear.addEventListener('click', () => {
         square.style.backgroundColor = 'white'
     })
 })
+
+function randomColor() {
+    return Math.floor(Math.random() * 255)
+}
+
+const rgb = document.querySelector('#rgb')
+
+rgb.addEventListener('click', () => {
+    let squares = document.querySelectorAll('.grid')
+    squares.forEach(square => {
+        square.addEventListener('mouseover', (elem) => {
+            elem.target.style.backgroundColor = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`
+        })
+    })
+})
+
+const blackBtn = document.querySelector("#black")
+
+blackBtn.addEventListener('click', () => {
+    let squares = document.querySelectorAll('.grid')
+    squares.forEach(square => {
+        square.addEventListener('mouseover', (elem) => {
+            elem.target.style.backgroundColor = `black`
+        })
+    })
+})
