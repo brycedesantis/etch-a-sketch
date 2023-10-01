@@ -4,6 +4,7 @@ body{
     align-items: center;
     flex-direction: column;
     margin-top: 40px;
+    background-color: #EAD7BB;
 }
 
 #container {
@@ -13,9 +14,29 @@ body{
     height: 545px;
     width: 545px;
     margin-top: 60px;
-    border: 1px solid black;
+    border: 5px solid #FFF2D8;
+    border-radius: 5px;
 }
 
 .grid{
     border: 1px solid black;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: -25px;
+}
+
+button {
+    background-color: #113946;
+    color: #BCA37F;
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    margin: auto 15px;
+    width: 100px;
+    cursor: pointer;
 }
